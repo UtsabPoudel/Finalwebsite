@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | VROOM</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            max-width: 1000px; /* Increased max-width */
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        body { 
+            font-family: Arial, sans-serif;
+            background-color: #f1f4fd;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-between;
+            background-image: url('303003.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px; /* Adjust top margin to create space between the paragraph and the table */
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 12px; /* Increased padding */
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="navdiv">
+        <div class="logo"><a href="index.html">VROOM</a> </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="table.html">Prices</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <button><a href="signin.html">SignIn</a></button>
+            <button><a href="signup.html">SignUp</a></button>
+        </ul>
+    </div>
+</nav>
+<br>
+<br>
+<div class="container">
+    <h2>Cars Information</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Color</th>
+                <th>Price ($)</th>
+                <th>Transmission</th>
+                <th>Fuel Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Toyota</td>
+                <td>Corolla</td>
+                <td>2022</td>
+                <td>Red</td>
+                <td>20,000</td>
+                <td>Automatic</td>
+                <td>Petrol</td>
+            </tr>
+            <tr>
+                <td>Ford</td>
+                <td>Mustang</td>
+                <td>2023</td>
+                <td>Blue</td>
+                <td>35,000</td>
+                <td>Manual</td>
+                <td>Petrol</td>
+            </tr>
+            <tr>
+                <td>Honda</td>
+                <td>Civic</td>
+                <td>2021</td>
+                <td>Silver</td>
+                <td>18,000</td>
+                <td>Automatic</td>
+                <td>Hybrid</td>
+            </tr>
+            <tr>
+                <td>BMW</td>
+                <td>3 Series</td>
+                <td>2024</td>
+                <td>Black</td>
+                <td>45,000</td>
+                <td>Automatic</td>
+                <td>Diesel</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</div>
+<footer class="footer">
+  
+        <p><strong>VROOM</strong></p>
+        <p>123 Main Street, City, Country</p>
+        <p>Email: info@vroom.com | Phone: +123456789</p>
+ 
+</footer>
+</body>
+</html>

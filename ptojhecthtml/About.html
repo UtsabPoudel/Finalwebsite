@@ -6,19 +6,17 @@
     <title>About | VROOM</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f1f4fd;
-        }
+    
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+     .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+      
 
         h1 {
             font-size: 32px;
@@ -27,18 +25,22 @@
             text-align: center;
         }
 
-        p {
+        .po {
             font-size: 18px;
             line-height: 1.6;
             margin-bottom: 20px;
-            color: #666;
+            color: #000000;
         }
 
-        /* Responsive Styles */
-        @media only screen and (max-width: 768px) {
-            .container {
-                padding: 15px;
-            }
+        body { font-family: Arial, sans-serif;
+            background-color: #f1f4fd;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-between;
+            background-image: url('303003.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
         }
     </style>
 </head>
@@ -48,8 +50,11 @@
         <div class="logo"><a href="index.html">VROOM</a> </div>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="table.html">Prices</a></li>
             <li><a href="contactus.html">Contact</a></li>
+
             <button><a href="signin.html">SignIn</a></button>
             <button><a href="signup.html">SignUp</a></button>
         </ul>
@@ -59,9 +64,16 @@
 <br>
 <div class="container">
     <h1>About Us</h1>
-    <p>Welcome to VROOM, your ultimate destination for all things automotive! Whether you're a car enthusiast, a casual driver, or someone who just loves cars, VROOM is here to serve you.</p>
-    <p>Our mission is to provide you with the latest news, reviews, and insights from the world of automobiles. From in-depth analysis of the newest models to tips for maintaining your vehicle, we've got you covered.</p>
-    <p>At VROOM, we're passionate about cars, and we want to share that passion with you. So sit back, buckle up, and enjoy the ride!</p>
+    <p class="po">Welcome to VROOM, your ultimate destination for all things automotive! Whether you're a car enthusiast, a casual driver, or someone who just loves cars, VROOM is here to serve you.</p>
+    <p class="po">Our mission is to provide you with the latest news, reviews, and insights from the world of automobiles. From in-depth analysis of the newest models to tips for maintaining your vehicle, we've got you covered.</p>
+    <p class="po">At VROOM, we're passionate about cars, and we want to share that passion with you. So sit back, buckle up, and enjoy the ride!</p>
 </div>
+<footer class="footer">
+  
+        <p><strong>VROOM</strong></p>
+        <p>123 Main Street, City, Country</p>
+        <p>Email: info@vroom.com | Phone: +123456789</p>
+ 
+</footer>
 </body>
 </html>

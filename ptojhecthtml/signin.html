@@ -11,6 +11,13 @@
       body {
         font-family: Arial, sans-serif;
         background-color: #f1f4fd;
+        min-height: 100vh; /* Ensure body covers entire viewport height */
+            display: flex;
+            flex-direction: column; /* Stack child elements vertically */
+            justify-content: space-between; /* Push footer to the bottom */
+            background-image: url('303180.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
       }
       
       .container {
@@ -60,7 +67,12 @@
         transition: background-color 0.3s ease;
         width: 100%;
       }
-      
+      .footer {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Add some transparency to the background */
+            color: white;
+            padding: 20px 0; /* Add padding for better appearance */
+        }
       button[type="submit"]:hover {
         background-color: #8b0000;
       }
@@ -72,7 +84,9 @@
         <div class="logo"><a href="index.html">VROOM</a> </div>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="table.html">Prices</a></li>
           <li><a href="contactus.html">Contact</a></li>
           <button><a href="signin.html">SignIn</a></button>
           <button><a href="signup.html">SignUp</a></button>
@@ -91,5 +105,12 @@
         <button type="submit">Sign In</button>
       </form>
     </div>
-  </body>
+    <footer class="footer">
+
+          <p><strong>VROOM</strong></p>
+          <p>123 Main Street, City, Country</p>
+          <p>Email: info@vroom.com | Phone: +123456789</p>
+    
+  </footer>
+</body>
 </html>

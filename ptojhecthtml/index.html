@@ -1,57 +1,68 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image Slider in HTML CSS and JavaScript | CodingNepal</title>
+    <title>Index | Vroom</title>
     <!-- Google Fonts Link For Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="style.css" />
 
     <script src="script.js" defer></script>
-  </head>
-  <body>
+    <style>
+        body {
+            min-height: 100vh; /* Ensure body covers entire viewport height */
+            display: flex;
+            flex-direction: column; /* Stack child elements vertically */
+            justify-content: space-between; /* Push footer to the bottom */
+            background-image: url('vroom.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .container {
+            flex: 1; /* Allow container to grow and take remaining space */
+            text-align: center; /* Center align the content */
+            padding: 20px; /* Add padding for better appearance */
+        }
+        .welcome-text {
+            color: white;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Add some transparency to the background */
+            color: white;
+            padding: 20px 0; /* Add padding for better appearance */
+        }
+    </style>
+</head>
+<body>
     <nav class="navbar">
-		<div class="navdiv">
-			<div class="logo"><a href="index.html">VROOM</a> </div>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="About.html">About</a></li>
-				<li><a href="contactus.html">Contact</a></li>
-				<button><a href="signin.html">SignIn</a></button>
-				<button><a href="signup.html">SignUp</a></button>
-			</ul>
-		</div>
-	</nav>
+        <div class="navdiv">
+            <div class="logo"><a href="index.html">VROOM</a> </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="table.html">Prices</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <button><a href="signin.html">SignIn</a></button>
+                <button><a href="signup.html">SignUp</a></button>
+            </ul>
+        </div>
+    </nav>
     <br>
     <br>
     <div class="container">
-      <div class="slider-wrapper">
-        <button id="prev-slide" class="slide-button material-symbols-rounded">
-          chevron_left
-        </button>
-        <ul class="image-list">
-          <img class="image-item" src="images/img-1.png" alt="img-1" />
-          <img class="image-item" src="images/img-2.png" alt="img-2" />
-          <img class="image-item" src="images/img-3.png" alt="img-3" />
-          <img class="image-item" src="images/img-4.png" alt="img-4" />
-          <img class="image-item" src="images/img-5.png" alt="img-5" />
-          <img class="image-item" src="images/img-6.png" alt="img-6" />
-          <img class="image-item" src="images/img-7.png" alt="img-7" />
-          <img class="image-item" src="images/img-8.png" alt="img-8" />
-          <img class="image-item" src="images/img-9.png" alt="img-9" />
-          <img class="image-item" src="images/img-10.png" alt="img-10" />
-        </ul>
-        <button id="next-slide" class="slide-button material-symbols-rounded">
-          chevron_right
-        </button>
-      </div>
-      <div class="slider-scrollbar">
-        <div class="scrollbar-track">
-          <div class="scrollbar-thumb"></div>
-        </div>
-      </div>
+        <!-- Welcome Message -->
+        <h1 class="welcome-text">Welcome to VROOM!</h1>
+        <p class="welcome-text">We are the car experts, bringing you the best in automotive photography.</p>
     </div>
-  </body>
+    <footer class="footer">
+        <p><strong>VROOM</strong></p>
+        <p>123 Main Street, City, Country</p>
+        <p>Email: info@vroom.com | Phone: +123456789</p>
+    </footer>
+</body>
 </html>
