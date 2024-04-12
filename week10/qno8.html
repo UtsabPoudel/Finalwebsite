@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Joining Example</title>
+</head>
+<body>
+  <script>
+    var myColor = ["Red", "Green", "White", "Black"];
+
+    // Using toString() method
+    var result1 = myColor.toString();
+    console.log("Using toString():", result1);
+
+    // Using join() method without any separator (default separator is comma)
+    var result2 = myColor.join();
+    console.log("Using join() without separator:", result2);
+
+    // Using join() method with specified separator
+    var result3 = myColor.join('+');
+    console.log("Using join() with '+' separator:", result3);
+
+    // Display results in HTML
+    document.write("<p>Using toString(): " + result1 + "</p>");
+    document.write("<p>Using join() without separator: " + result2 + "</p>");
+    document.write("<p>Using join() with '+' separator: " + result3 + "</p>");
+  </script>
+</body>
+</html>
