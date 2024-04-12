@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Form Validation</h2>
+  <label for="value">Enter a value:</label>
+  <input type="text" id="value">
+  <button onclick="checkNaN()">Check NaN</button>
+  <p id="nanResult"></p>
+
+  <label for="password">Enter password:</label>
+  <input type="password" id="password">
+  <label for="confirmPassword">Confirm password:</label>
+  <input type="password" id="confirmPassword">
+  <button onclick="checkPassword()">Check Password</button>
+  <p id="passwordResult"></p>
+</div>
+
+<script>
+  function checkNaN() {
+    var value = document.getElementById('value').value;
+    if (isNaN(value)) {
+      document.getElementById('nanResult').innerText = 'The entered value is NaN.';
+    } else {
+      document.getElementById('nanResult').innerText = 'The entered value is not NaN.';
+    }
+  }
+
+  function checkPassword() {
+    var password = document.getElementById('password').value;
+    var confirmPassword = document.getElementById('confirmPassword').value;
+    if (password === confirmPassword) {
+      document.getElementById('passwordResult').innerText = 'Passwords match.';
+    } else {
+      document.getElementById('passwordResult').innerText = 'Passwords do not match.';
+    }
+  }
+</script>
+
+</body>
+</html>

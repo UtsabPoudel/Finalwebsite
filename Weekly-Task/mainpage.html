@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Exercises</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+  }
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .week-button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  .week-button:hover {
+    background-color: #777;
+  }
+  .exercise-button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  .exercise-button:hover {
+    background-color: #666;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" id="weekly-exercise">Weekly Exercise</a>
+</nav>
+
+<div class="container">
+  <button id="week3" class="week-button">Week 3</button>
+  <button id="week4" class="week-button">Week 4</button>
+  <button id="week5" class="week-button">Week 5</button>
+  <button id="week6" class="week-button">Week 6</button>
+  <button id="week7" class="week-button">Week 7</button>
+  <button id="week8" class="week-button">Week 8</button>
+  <button id="week9" class="week-button">Week 9</button>
+  <button id="week10" class="week-button">Week 10</button>
+  <button id="week11" class="week-button">Week 11</button>
+  
+  <div id="week3-section" class="section">
+    <button class="exercise-button" onclick="openLink('week3/ex.html')">Exercise</button>
+  </div>
+  <div id="week4-section" class="section">
+    <button class="exercise-button" onclick="openLink('https://app.moqups.com/bcCS6ViT2wqbbZkCAr4HfYoQvYa81b11/view/page/a8a40813f')">Exercise</button>
+
+  </div>
+  <div id="week5-section" class="section">
+    <button class="exercise-button" onclick="openLink('week5/week5 ex.html')">Exercise 1</button>
+    <button class="exercise-button" onclick="openLink('week5/Ex2lab1.html')">Exercise 2</button>
+    <button class="exercise-button" onclick="openLink('week5/page1.html')">Exercise 3</button>
+    <button class="exercise-button" onclick="openLink('week5/page2.html')">Exercise 4</button>
+  </div>
+  <div id="week6-section" class="section">
+    <button class="exercise-button" onclick="openLink('week6/Ex1.html')">Exercise 1</button>
+    <button class="exercise-button" onclick="openLink('week6/ex2.html')">Exercise 2</button>
+    <button class="exercise-button" onclick="openLink('week6/Ex3lb2.html')">Exercise 3</button>
+  </div>
+  <div id="week7-section" class="section">
+    <button class="exercise-button" onclick="openLink('week7/ex1.html')">Exercise 1</button>
+    <button class="exercise-button" onclick="openLink('week7/ex2.html')">Exercise 2</button>
+
+  </div>
+  <div id="week8-section" class="section">
+    <button class="exercise-button" onclick="openLink('week8/index.html')">Exercise </button>
+   
+  </div>
+  <div id="week9-section" class="section">
+    <button class="exercise-button" onclick="openLink('week9/ex1.html')">Exercise 1</button>
+    <button class="exercise-button" onclick="openLink('week9/ex2.html')">Exercise 2</button>
+    <button class="exercise-button" onclick="openLink('week9/ex3.html')">Exercise 3</button>
+  </div>
+  <div id="week10-section" class="section">
+    <button class="exercise-button" onclick="openLink('week10/qno1.html')">Exercise 1</button>
+    <button class="exercise-button" onclick="openLink('week10/qno2.html')">Exercise 2</button>
+    <button class="exercise-button" onclick="openLink('week10/qno3.html')">Exercise 3</button>
+    <button class="exercise-button" onclick="openLink('week10/qno4.html')">Exercise 4</button>
+    <button class="exercise-button" onclick="openLink('week10/qno5.html')">Exercise 5</button>
+    <button class="exercise-button" onclick="openLink('week10/qno6.html')">Exercise 6</button>
+    <button class="exercise-button" onclick="openLink('week10/qno7.html')">Exercise 7</button>
+    <button class="exercise-button" onclick="openLink('week10/qno8.html')">Exercise 8</button>
+    <button class="exercise-button" onclick="openLink('week10/qno9.html')">Exercise 9</button>
+    <button class="exercise-button" onclick="openLink('week10/qno10.html')">Exercise 10</button>
+    <button class="exercise-button" onclick="openLink('week10/qno11.html')">Exercise 11</button>
+    
+  </div>
+  <div id="week11-section" class="section">
+    <button class="exercise-button" onclick="openLink('week11/qno1.html')">Exercise 1</button>
+    <button class="exercise-button" onclick="openLink('week11/qno2.html')">Exercise 2</button>
+    <button class="exercise-button" onclick="openLink('week11/qno3.html')">Exercise 3</button>
+    <button class="exercise-button" onclick="openLink('week11/qno4.html')">Exercise 4</button>
+    <button class="exercise-button" onclick="openLink('week11/qno5.html')">Exercise 5</button>
+  </div>
+</div>
+
+<script>
+  document.getElementById('weekly-exercise').addEventListener('click', function(event) {
+    event.preventDefault();
+    hideAllSections();
+  });
+
+  function hideAllSections() {
+    var sections = document.querySelectorAll('.section');
+    sections.forEach(function(section) {
+      section.style.display = 'none';
+    });
+  }
+
+  function showSection(sectionId) {
+    hideAllSections();
+    document.getElementById(sectionId).style.display = 'block';
+  }
+
+  function openLink(url) {
+    window.open(url, '_blank');
+  }
+
+  document.getElementById('weekly-exercise').click();
+
+  document.getElementById('week3').addEventListener('click', function(event) {
+    event.preventDefault();
+    showSection('week3-section');
+  });
+
+  document.getElementById('week4').addEventListener('click', function(event) {
+    event.preventDefault();
+    showSection('week4-section');
+  });
+
+  document.getElementById('week5').addEventListener('click', function(event) {
+    event.preventDefault();
+    showSection('week5-section');
+  });
+
+  document.getElementById('week6').addEventListener('click', function(event) {
+    event.preventDefault();
+    showSection('week6-section');
+  });
+
+  document.getElementById('week7').addEventListener('click', function(event) {
+    event.preventDefault();
+    showSection('week7-section');
+  });
+
+  document.getElementById('week8').addEventListener('click', function(event) {
+    event.preventDefault();
+    showSection('week8-section');
+  });
+
+  document.getElementById('week9').addEventListener('click', function(event) {
+    event.preventDefault();
+    showSection('week9-section');
+  });
+
+  document.getElementById('week10').addEventListener('click', function(event) {
+    event.preventDefault();
+    showSection('week10-section');
+  });
+
+  document.getElementById('week11').addEventListener('click', function(event) {
+    event.preventDefault();
+    showSection('week11-section');
+  });
+</script>
+
+</body>
+</html>

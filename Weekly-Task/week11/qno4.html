@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Background Color</title>
+</head>
+<body>
+
+<p id="paragraph">This is a paragraph. Click the button to change its background color.</p>
+<button onclick="changeBackgroundColor()">Change Color</button>
+
+<script>
+  
+    function changeBackgroundColor() {
+        var paragraph = document.getElementById("paragraph");
+
+        var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+      
+        paragraph.style.backgroundColor = randomColor;
+    }
+</script>
+
+</body>
+</html>
